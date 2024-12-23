@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet"  type="text/css"  href='{% static "style.css" %}'>
+</head>
+<body>
+    <header>
+        {% block pagename %}
+        <h1>{{ title }}</h1>
+        {% endblock %}
+    </header>
+
+    <header>
+        <img src="{ static 'style.css' %}" alt="Логотип магазина" width="100">
+        <nav>
+            {% block menu %}
+            <a href="/main_page">Главная</a>
+            <a href="/shop">Магазин</a>
+            <a href="/basket">Корзина</a>
+            {% endblock %}
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <ul>
+            {% if content is None %}
+            <p>Здесь пока ни чего нет :-(</p>
+            {% else %}
+                {% for i in content %}
+                    <p><li>{{ i.title }} | {{ i.description }} Стоимость: {{ i.cost }}
+                        <a href="#"><button>Купить</button></a></li></p>
+                {% endfor %}
+            {% endif %}
+        </ul>
+        {% endblock %}
+    </main>
+
+    <header>
+        {% block back %}
+        <button><a href="/main_page"> На Главную страницу </a></button>
+        <button><a href="/"> Регистрация </a> </button>
+        {% endblock %}
+    </header>
+
+</body>

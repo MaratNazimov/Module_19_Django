@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for buyer in buyer_all %}
+        <h1>Имя: {{ buyer.name|title }}</h1>
+        <h2>Возраст: {{ buyer.age }}</h2>
+        <h2>Баланс: {{ buyer.balance }} Руб.</h2>
+    {% endfor %}
+</body>
+</html>
