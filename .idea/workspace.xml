@@ -19,6 +19,7 @@
       <change beforePath="$PROJECT_DIR$/module_19/list_QuerySet" beforeDir="false" afterPath="$PROJECT_DIR$/module_19/list_QuerySet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_19/module_19/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_19/module_19/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_19/module_19/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_19/module_19/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_19/task1/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_19/task1/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_19/task1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_19/task1/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_19/task1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_19/task1/views.py" afterDir="false" />
     </list>
@@ -46,19 +47,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.manage.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Module_19/module_19/templates",
-    "settings.editor.selected.configurable": "CodeWithMe"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Module_19/module_19/templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Module_19\module_19\templates" />
