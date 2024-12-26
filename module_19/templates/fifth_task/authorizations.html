@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация</title>
+    <title>Авторизация</title>
     <link rel="stylesheet"  type="text/css"  href='{% static "style.css" %}'>
 </head>
 <body>
@@ -12,12 +12,12 @@
     <h1>{{ error }}</h1>
     {% endblock %}
     <header>
-        <h1>Регистрация</h1>
+        <h1>Авторизация</h1>
         <a href="/main_page">Главная страница</a>
     </header>
     <p></p>
 
-        <form method="post">
+        <form method="get">
             {% csrf_token %}
             <label for="username">Введите логин</label>
             <input type="text" name="username" maxlength="30" required>
@@ -26,27 +26,13 @@
             <label for="password ">Введите пароль</label>
             <input type="text" name="password" maxlength="8" required>
             <p></p>
-
-            <label for="repeat_password">Повторите пароль</label>
-            <input type="text" name="repeat_password" maxlength="8" required>
-            <p></p>
-
-            <label for="age">Введите свой возраст</label>
-            <input type="integer" name="age" maxlength="3" required>
-            <p></p>
-
-            <label for="subscribe">
-                <input type="checkbox" name="subscribe">
-                Согласие на обработку персональных данных
-            </label>
-            <p></p>
-
-            <button type="submit">Зарегестрироваться</button>
+            <button type="submit">Войти</button>
         </form>
         <p></p>
 
 <footer><p></p>
     © 2024, Интернет-магазин
 </footer>
+
 </body>
 </html>

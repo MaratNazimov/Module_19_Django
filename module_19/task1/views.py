@@ -1,7 +1,16 @@
 from django.shortcuts import render
 from .models import *
 from django.http import HttpResponse
-from .forms import UserRegister
+from .forms import UserRegister    #, AuthorizationsForm
+from django.core.paginator import Paginator
+
+def news(request):
+    news_all = News.objects.all().order_by('-date')    # order_by('-date') Сортировка по дате
+    paginator = Paginator(news_all, 3)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    context = {'news': page_obj}
+    return render(request, 'fourth_task/news.html', context)
 
 def bd_buyer(request):
     buyer_all = Buyer.objects.all()
@@ -39,6 +48,23 @@ def base_menu(request):
         'title': title
     }
     return render(request, 'fourth_task/base_menu.html', context)
+
+# def authorization_user(request):
+#     users = Buyer.objects.all()
+#     list_name = [user.name for user in users]
+#     list_password = [user.password for user in users]
+#     if request.method == "POST":
+#         form = AuthorizationsForm(request.POST)
+#         username = request.GET.get("username")
+#         password = request.GET.get("password")
+#         print(username)
+#         print(password)
+#         print(list_name)
+#         print(list_password)
+#
+#
+#     else:
+#         return HttpResponse(f"Приветствуем, {username}!")
 
 
 def form_register(request):
@@ -81,32 +107,3 @@ def form_register(request):
     else:
         form = UserRegister()
     return render(request, "fifth_task/registration_page.html", {'form': form})
-
-# def sign_up_by_html(request):
-#     if request.method == "POST":
-#         username = request.POST.get("username")
-#         password = request.POST.get("password")
-#         repeat_password = request.POST.get("repeat_password")
-#         age = request.POST.get("age")
-#         subscribe = request.POST.get("subscribe")
-#
-#         for i in users:
-#             if i == username:
-#                 error = "Пользователь уже существует"
-#                 return render(request, "fifth_task/registration_page.html",
-#                               {"error": error})
-#         if int(age) < 18:
-#             error = "Вы должны быть старше 18"
-#             return render(request, "fifth_task/registration_page.html",
-#                           {"error": error})
-#         if password != repeat_password:
-#             error = "Пароли не совпадают"
-#             return render(request, "fifth_task/registration_page.html",
-#                           {"error": error})
-#         if subscribe != 'on':
-#             error = "Вы не подтвердили согласие на обработку персональных данных"
-#             return render(request, "fifth_task/registration_page.html",
-#                           {"error": error})
-#         else:
-#             return HttpResponse(f"Приветствуем, {username}!")
-#     return render(request, "fifth_task/registration_page.html")

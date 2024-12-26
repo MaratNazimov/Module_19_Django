@@ -7,12 +7,15 @@
     <list default="true" id="233d18b5-d027-4a25-97e6-00fdb53712bf" name="Changes" comment="module_19">
       <change afterPath="$PROJECT_DIR$/module_19/static/style.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/task1/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_19/templates/fifth_task/authorizations.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/templates/fifth_task/bd_buyer.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/templates/fifth_task/registration_page.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/templates/fourth_task/base_menu.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/templates/fourth_task/basket.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/templates/fourth_task/main_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_19/templates/fourth_task/news.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/templates/fourth_task/shop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_19/templates/fourth_task/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_19/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/module_19/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/module_19/db.sqlite3" afterDir="false" />
@@ -65,6 +68,10 @@
       <recent name="C:\Module_19\module_19\templates" />
       <recent name="C:\Module_19\module_19" />
       <recent name="C:\Module_19\module_19\task1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Module_19\module_19\templates\fourth_task" />
+      <recent name="C:\Module_19\module_19\templates" />
     </key>
   </component>
   <component name="RunManager">

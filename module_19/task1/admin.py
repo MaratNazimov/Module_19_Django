@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Buyer, Game
+from .models import Buyer, Game, News
 
 
 @admin.register(Buyer)
@@ -18,6 +18,13 @@ class GameAdmin(admin.ModelAdmin):
     search_fields = ('title', )                           # Поиск по полю
     list_per_page = 30                                    # Ограничение кол-ва записей
 
+
+@admin.register(News)
+class NewsAdmin(admin.ModelAdmin):
+    list_display = ('title', 'content', 'date', )
+    list_filter = ('title', 'date', )
+    search_fields = ('title', )
+    list_per_page = 20
 
 
 # admin.site.register(Buyer)
