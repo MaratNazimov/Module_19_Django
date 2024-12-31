@@ -9,6 +9,3 @@ class UserRegister(forms.Form):
     age = forms.IntegerField(label="Введите свой возраст")
     subscribe = forms.BooleanField(required=False, label="Согласие на обработку персональных данных")
 
-# class AuthorizationsForm(forms.Form):
-#     username = forms.CharField(label="Введите логин")
-#     password = forms.CharField(label="Введите пароль", widget=forms.PasswordInput)

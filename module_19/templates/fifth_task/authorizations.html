@@ -13,11 +13,11 @@
     {% endblock %}
     <header>
         <h1>Авторизация</h1>
-        <a href="/main_page">Главная страница</a>
+        <a href="/registration_page">Регистрация</a>
     </header>
     <p></p>
 
-        <form method="get">
+        <form method="POST">
             {% csrf_token %}
             <label for="username">Введите логин</label>
             <input type="text" name="username" maxlength="30" required>

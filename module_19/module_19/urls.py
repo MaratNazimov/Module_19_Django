@@ -24,8 +24,8 @@ urlpatterns = [
     path('shop/', shop),
     path('basket/', basket),
     path('base_menu/', base_menu),
-    path('', form_register),
+    path('registration_page', form_register),
     path('bd_buyer/', bd_buyer),
-    # path('authorizations/', authorization_user),
+    path('', authorization_user),
     path('platform/news/', news),
 ]

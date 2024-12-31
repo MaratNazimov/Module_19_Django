@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from .models import *
 from django.http import HttpResponse
-from .forms import UserRegister    #, AuthorizationsForm
+from .forms import *
 from django.core.paginator import Paginator
+
 
 def news(request):
     news_all = News.objects.all().order_by('-date')    # order_by('-date') Сортировка по дате
@@ -49,28 +50,33 @@ def base_menu(request):
     }
     return render(request, 'fourth_task/base_menu.html', context)
 
-# def authorization_user(request):
-#     users = Buyer.objects.all()
-#     list_name = [user.name for user in users]
-#     list_password = [user.password for user in users]
-#     if request.method == "POST":
-#         form = AuthorizationsForm(request.POST)
-#         username = request.GET.get("username")
-#         password = request.GET.get("password")
-#         print(username)
-#         print(password)
-#         print(list_name)
-#         print(list_password)
-#
-#
-#     else:
-#         return HttpResponse(f"Приветствуем, {username}!")
+def authorization_user(request):
+    users = Buyer.objects.all()
+    list_user = [user.name for user in users]
+    if request.method == "POST":
+        password = request.POST.get("password")
+        username = request.POST.get("username")
+        if list_user.count(username):
+            user = Buyer.objects.get(name=username)
+            print(user.name)
+            print(user.password)
+            if user.password == password:
+                return render(request, 'fourth_task/main_page.html')
+            else:
+                error = "пароль не верный"
+                return render(request, "fifth_task/authorizations.html",
+                              {"error": error})
+        else:
+            error = "Пользователь не найден"
+            return render(request, "fifth_task/authorizations.html",
+                          {"error": error})
+    else:
+        return render(request, "fifth_task/authorizations.html")
 
 
 def form_register(request):
     users = Buyer.objects.all()
     list_user = [user.name for user in users]
-
     if request.method == "POST":
         form = UserRegister(request.POST)
         if form.is_valid():
@@ -106,4 +112,4 @@ def form_register(request):
                 return HttpResponse(f"Приветствуем, {username}!")
     else:
         form = UserRegister()
-    return render(request, "fifth_task/registration_page.html", {'form': form})
+        return render(request, "fifth_task/registration_page.html", {'form': form})
