@@ -17,16 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
-from task1 import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('__debug__/', include('debug_toolbar.urls')),
     path('task/', include("task1.urls"), name="task"),
-    path('api/personList', views.PersonAPIView.as_view()),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, documet_root=settings.MEDIA_URL)
