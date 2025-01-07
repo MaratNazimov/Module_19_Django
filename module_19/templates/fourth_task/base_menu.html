@@ -14,12 +14,11 @@
     </header>
 
     <header>
-        <img src="{ static 'style.css' %}" alt="Логотип магазина" width="100">
         <nav>
             {% block menu %}
-            <a href="/main_page">Главная</a>
-            <a href="/shop">Магазин</a>
-            <a href="/basket">Корзина</a>
+            <a href="{% url 'main_page' %}">Главная</a>
+            <a href="{% url 'shop' %}">Магазин</a>
+            <a href="{% url 'basket' %}">Корзина</a>
             {% endblock %}
         </nav>
     </header>
@@ -41,8 +40,8 @@
 
     <header>
         {% block back %}
-        <button><a href="/main_page"> На Главную страницу </a></button>
-        <button><a href="/"> Авторизация </a> </button>
+        <button><a href="{% url 'main_page' %}"> На Главную страницу </a></button>
+        <button><a href="{% url 'authorization_user' %}"> Авторизация </a> </button>
         {% endblock %}
     </header>
 

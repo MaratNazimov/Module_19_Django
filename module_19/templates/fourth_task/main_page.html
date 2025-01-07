@@ -14,5 +14,5 @@
 
 {% block back %}
     {{ block.super }}
-    <button><a href="/base_menu"> На base_menu страницу </a></button>
+    <button><a href="{% url 'base_menu' %}"> На base_menu страницу </a></button>
 {% endblock %}

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Buyer, Game, News
+from .models import *
 
 
 @admin.register(Buyer)
@@ -26,6 +26,8 @@ class NewsAdmin(admin.ModelAdmin):
     search_fields = ('title', )
     list_per_page = 20
 
+admin.site.register(Person)
+admin.site.register(Category)
 
 # admin.site.register(Buyer)
 # admin.site.register(Game)

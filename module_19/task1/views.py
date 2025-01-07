@@ -3,6 +3,13 @@ from .models import *
 from django.http import HttpResponse
 from .forms import *
 from django.core.paginator import Paginator
+from rest_framework import generics
+from .serializers import PersonSerializer
+
+
+class PersonAPIView(generics.ListAPIView):
+    queryset = Person.objects.all()
+    serializer_class = PersonSerializer
 
 
 def news(request):
@@ -58,8 +65,6 @@ def authorization_user(request):
         username = request.POST.get("username")
         if list_user.count(username):
             user = Buyer.objects.get(name=username)
-            print(user.name)
-            print(user.password)
             if user.password == password:
                 return render(request, 'fourth_task/main_page.html')
             else:

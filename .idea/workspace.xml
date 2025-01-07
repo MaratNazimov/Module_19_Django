@@ -7,6 +7,8 @@
     <list default="true" id="233d18b5-d027-4a25-97e6-00fdb53712bf" name="Changes" comment="module_19">
       <change afterPath="$PROJECT_DIR$/module_19/static/style.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/task1/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_19/task1/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_19/task1/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/templates/fifth_task/authorizations.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/templates/fifth_task/bd_buyer.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/templates/fifth_task/registration_page.html" afterDir="false" />
@@ -16,6 +18,7 @@
       <change afterPath="$PROJECT_DIR$/module_19/templates/fourth_task/news.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/templates/fourth_task/shop.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/module_19/templates/fourth_task/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_19/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/module_19/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/module_19/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_19/list_QuerySet" beforeDir="false" afterPath="$PROJECT_DIR$/module_19/list_QuerySet" afterDir="false" />
@@ -34,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -49,19 +53,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Module_19/module_19/templates&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.manage (1).executor": "Run",
+    "Python.manage.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Module_19/module_19",
+    "settings.editor.selected.configurable": "CodeWithMe"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Module_19\module_19\templates" />
@@ -69,6 +74,7 @@
       <recent name="C:\Module_19\module_19\task1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Module_19" />
       <recent name="C:\Module_19\module_19\templates\fourth_task" />
       <recent name="C:\Module_19\module_19\templates" />
     </key>
@@ -84,7 +90,7 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="Python 3.12 (Module_19)" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Module_19\module_19" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
